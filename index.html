@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web To Lead Form iLearning</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!--<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />-->
+
+  <body>
+    <!--<script src="https://www.google.com/recaptcha/api.js"></script>-->
+      <script src="script.js"></script>
+     <h1>Create Lead iLearning</h1>
+  
+
+  <form
+    action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DdM000003WITN"
+    method="POST" onsubmit="beforesubmit(event)">
+  
+    <input type="hidden" name="oid" value="00DdM000003WITN" />
+    <input type="hidden" name="retURL" value="http://" />
+
+  
+    <label for="first_name">First Name</label
+    ><input
+      id="first_name"
+      maxlength="40"
+      name="first_name"
+      size="20"
+      type="text"
+      required="true"
+    /><br />
+
+    <label for="last_name">Last Name</label
+    ><input
+      id="last_name"
+      maxlength="80"
+      name="last_name"
+      size="20"
+      type="text"
+      required="true"
+    /><br />
+
+    <label for="email">Email</label
+    ><input
+      id="email"
+      maxlength="80"
+      name="email"
+      size="20"
+      type="text"
+      required="true"
+    /><br />
+
+    <label for="company">Company</label
+    ><input
+      id="company"
+      maxlength="40"
+      name="company"
+      size="20"
+      type="text"
+      required="true"
+    /><br />
+
+    <label for="city">City</label
+    ><input
+      id="city"
+      maxlength="40"
+      name="city"
+      size="20"
+      type="text"
+      required="true"
+    /><br />
+
+    <label for="state">State/Province</label
+    ><input
+      id="state"
+      maxlength="20"
+      name="state"
+      size="20"
+      type="text"
+      required="true"
+    /><br />
+
+    <label for="phone">Phone</label
+    ><input
+      id="phone"
+      maxlength="40"
+      name="phone"
+      size="20"
+      type="text"
+      required="true"
+    /><br />
+
+    <label for="Registration Date">Registration Date</label>
+    <input type="date" required="true" class="inputdate" /><br />
+    <!--<input
+      id="00NdM000001P5br"
+      name="00NdM000001P5br"
+      size="12"
+      type="text" /></span
+  ><br />-->
+
+    <label for="Date">Batch Start Date: </label>
+    <input type="date" required="true" class="inputdate" />
+    <!--<span class="dateInput dateOnlyInput"
+    ><input
+      id="00NdM000001OzlM"
+      name="00NdM000001OzlM"
+      size="12"
+      type="text" /></span
+  ><br />-->
+    <br />
+    <input type="submit" name="submit" />
+  </form>
+</html>
